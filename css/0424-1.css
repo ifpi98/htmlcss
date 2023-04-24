@@ -8,6 +8,7 @@ html{
 /* vw는 가로 크기에 따라 달라지는 값 */
 .px{    font-size: 16px; }
 .rem{    font-size: 1rem; }
+/* 1rem <html> 요소와 같은 문서의 루트 요소의 글꼴 크기 */
 .pc{    font-size: 1pc; }
 .pt{    font-size: 1pt; }
 .ex{    font-size: 1ex; }
