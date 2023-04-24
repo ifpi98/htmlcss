@@ -5,8 +5,7 @@
 }
 
 a{
+    color: black;
     text-decoration: none;
     /* 밑줄제거 */
-    color: black;
-    
 }
