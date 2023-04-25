@@ -10,3 +10,12 @@ a{
     color: black;
     
 }
+
+li{
+    list-style: none;
+}
+
+table{
+    border-collapse: collapse;
+    /* 표테두리 단일실선 */
+}
