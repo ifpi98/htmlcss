@@ -1,0 +1,39 @@
+#box{
+    width: 175px; height: auto;
+    background: pink;
+    display: none;
+}
+
+input[type=checkbox]:checked+#box{
+    display: block;
+}
+
+/* 체크되면 보이고, 그렇지 않으면 숨긴다. */
+label{
+    cursor: pointer;
+}
+
+input[type=text]:focus{
+    outline: 2px solid red;
+    /* border: 3px solid blue; */
+}
+
+/* border -> 테두리, 레이아웃에 영향을 준다.
+outline -> 테두리의 외곽테두리, 디자인용, 레이아웃과는 관계없음 */
+
+input[type=tel]:enabled{
+    border:2px solid red;
+}
+input[type=tel]:disabled{
+    border:2px solid gray;
+}
+
+/* readonly는 입력은 안되고, 기존의 value를
+파라미터로 컨트롤러에 넘길 수 있지만
+disabled는 입력도 안되고, 값도 넘길 수 없다. */
+
+#box:target{
+    display: block;
+}
+
+/* 아이디가 box인 요소에 target(링크)이 걸리면 #box를 보여라 */

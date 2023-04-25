@@ -1,0 +1,58 @@
+ul>li:nth-child(2n)
+{
+    background: tan;
+}
+ul>li:nth-child(2n+1)
+{
+    background: orange;
+}
+
+ul>li{
+    float: left;
+}
+
+h1:last-of-type{
+    clear:left;
+    /* float left를 해제 - 줄바꿈 */
+}
+
+ul>li>a{
+    display: block;
+    /* 박스로 변환하기  */
+    padding:5px 10px;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+ul>li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+
+ul>li:last-child{
+    border-radius: 0 10px 10px 0;
+}
+
+ul>li:hover{
+    background: aquamarine;
+    text-transform: uppercase;
+    transform: scale(1.1);
+    /* scale(1.2);  */
+    /* rotate(180deg);  */
+    opacity: 0.5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul>li{
+    width: 100px;
+    text-align: center;
+    transition: transform 0.3s; opacity: 0.2s; box-shadow 0.3s;
+    opacity: 1;
+    /* transition: opacity 0.3s; */
+}
+
+ul{ 
+    /* border:1px solid red;  */
+    width: 700px;
+}

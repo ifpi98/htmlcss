@@ -1,0 +1,66 @@
+    /* text-align: center/left/right/justify;
+    text-transform: uppercase/lowercase/capitalize;
+    text-decoration: underline/overline/line-through/none;
+
+    text-indent: 들여쓰기;
+    letter-spacing: 글자간격;
+    word-spacing: 단어간격;
+    white-space: 줄바꾸기;
+    word-wrap: 줄바꾸기; */
+
+    p{
+        text-transform: uppercase;
+        border: 1px solid black;
+        text-align: left;
+        padding: 10px;
+        margin:10px;
+        text-decoration: underline dashed blue;
+    }
+
+    p:hover{
+        text-transform: capitalize;
+        text-align: justify;
+        text-decoration: underline dotted red;
+        border: 5px outset black;
+        /* word-break: break-all; */
+    }
+
+    p:active{
+        text-transform: lowercase;
+        text-align: justify;
+        text-decoration: underline overline line-through solid orange;
+        border: 5px inset black;
+        hyphens: auto;
+        white-space: normal;
+        -webkit-hyphens: auto;
+        /* word-break: break-all; */
+    }
+
+    div{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    div{
+        word-wrap: break-word;
+        /* word-break: break-all; */
+        width: 300px;
+        
+        /* white-space: nowrap;  */
+        /* 줄이 안 바뀜 */
+        text-overflow: ellipsis; /* 생략기호를 의미함 */
+        /* text-overflow: clip; */
+        overflow: hidden;
+        /* 말줄임표 넣기 */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        height: 60px;
+        letter-spacing: -1px;
+        word-spacing: 5px;
+    }
+
+    div:hover{
+        white-space: normal;
+    }

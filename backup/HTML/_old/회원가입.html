@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+
+<body>
+    <form>
+        <table cellspacing="2">
+            <colgroup>
+                <col style="background: lime; width: 120px;">
+            </colgroup>
+
+            <tr style="background: white;">
+                <td colspan="5">
+                    *회원가입을 하기에 앞서 회원약관을 읽어보시기 바랍니다.
+                </td>
+            </tr>
+
+            <tr style="background: white;">
+                <td colspan="5">
+                    <textarea cols="80" rows="10" style="resize: none;">
+인터넷 쇼핑몰 회원약관
+
+총칙 회원가입, 탈퇴, 서비스이용                             총칙 회원가입,
+탈퇴, 서비스이용                                     총칙 회원가입, 탈퇴, 
+서비스이용                                   총칙 회원가입, 탈퇴, 서비스이용
+총칙 회원가입, 탈퇴, 서비스이용                             총칙 회원가입,
+탈퇴, 서비스이용                                    총칙 회원가입, 탈퇴, 
+서비스이용                                  총칙 회원가입, 탈퇴, 서비스이용
+총칙 회원가입, 탈퇴, 서비스이용                            총칙 회원가입,
+탈퇴, 서비스이용                                        총칙 회원가입, 탈퇴, 
+서비스이용                                  총칙 회원가입, 탈퇴, 서비스이용
+                </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;">위의 약관에</td>
+                <td colspan="4">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">[동의합니다]</label>
+                    <label for="agree">[취소합니다]</label>
+                </td>
+            </tr>
+
+            <tr style="background: white;">
+                <td colspan="5"> *회원 정보를 입력하신 후 <strong>가입하기</strong>를 눌러주십시오. *표시는 필수입력입니다.</td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> 이름*</td>
+                <td colspan="4"><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> 아이디(ID)*</td>
+                <td>
+                    <input type="text"><button>중복확인</button>
+                    (문자와 숫자 4~10자리)
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> 비밀번호* </td>
+                <td><input type="password">비밀번호확인
+                    <input type="password" size="8"> (문자와 숫자 4~10자리)
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> 주민등록번호*</td>
+                <td colspan="4">
+                    <input type="text" size="6">-<input type="text" size="6">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> E-mail*</td>
+                <td>
+                    <input type="email" size="50">
+                    <input type="checkbox" id="info">
+                    <label for="info">[정보 메일을 수신함]</label>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="5" style="background: white;">
+                    * 자택, 회사주소를 입력하면 상품구매시 자동으로 입력됩니다.
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> 자택전화 </td>
+                <td> <input type="text"></td>
+
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> 자택주소* </td>
+                <td colspan="4">
+                    <input type="text">-<input type="text" size="6">
+                    [우편번호검색]
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"> 나머지* </td>
+                <td colspan="4"> <input type="text" size="65"> </td>
+            </tr>
+
+            <tr align="center">
+                <td bgcolor="white" colspan="2" align="right">
+                    <input type="submit" value="[가입하기]">
+                    <input type="reset" value="[취소하기]">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>

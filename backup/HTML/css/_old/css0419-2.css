@@ -1,0 +1,77 @@
+body{
+    color: blue;
+    /* border: 1px solid saddlebrown; */
+}
+
+header{
+    /* border: 1px solid greenyellow; */
+}
+
+div{
+    color: red;
+    border: 1px solid greenyellow;
+    margin:10px;
+}
+
+p{
+    border:inherit;
+    margin:inherit;
+    /* 상속받겠다 */
+}
+
+ul{
+    color: orange;
+}
+li{
+    color:red
+}
+a{
+    color: inherit;
+}
+
+ol{
+    color: gray;
+}
+
+dl>dt{
+    background: red;
+}
+dl>dt{
+    background: blue;
+}
+
+dt{
+    background: lawngreen;
+}
+
+dt.aaa{
+    background: gray;
+}
+
+#aaa{
+    background: orange;
+}
+
+dt#aaa{
+    background: gold;
+}
+
+dt#aaa.aaa{
+    background: tomato;
+}
+
+dt#aaa.aaa,dl>dt{
+    background: silver;
+}
+
+/* h2,h1{
+    background: blue;
+}
+
+h2{
+    background: red;
+} */
+
+dt{
+    background: cyan !important; 
+}

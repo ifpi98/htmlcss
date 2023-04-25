@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3 id="top"> 목적지 </h3>
+    <a href="#bottom">출발지</a>
+    <h2> 글자관련태그 </h2>
+    <p> 대한민국 우리나라 안녕하세요 </p>
+    <p>
+        <ruby>
+            <span>화신</span>
+            <rt>꽃의신</rt>
+            <span>조정석</span>
+            <rp>(</rp>
+            <rt>질투의 화신</rt>
+            <rp>)</rp>
+        </ruby>
+    </p>
+    <del> <big> 어서오세요</big></del>
+    <p> Lorem <b>ipsum,</b> dolor sit <i>amet</i> consectetur adipisicing elit. Ad, <big>deleniti</big>
+        <small>nesciunt</small> vero amet facere, eius tenetur consectetur <ins>accusantium</ins> repudiandae, cum
+        assumenda aliquam molestiae nihil. Expedita est enim ex eveniet doloribus! </p>
+    <p> H<sub>2</sub>O CM<sup>2</sup> </p>
+
+    <p> <abbr title="hyper text markup language">HTML</abbr> <acronym title="world wide web">www</acronym> 그들의 망의 이상이
+        약동하다. 남는 많이 길을 우는 이는 그리하였는가? <q cite="강남피부">무엇을</q> 가진 그들은 너의 아니다. 유소년에게서 따뜻한 구하지 심장의 이것이야말로 약동하다. 웅대한 황금시대의 같은
+        시들어 곧 착목한는 보내는 미묘한 있다. 위하여 어디 사라지지 황금시대의 군영과 불어 어디 인류의 듣기만 것이다. </p>
+
+    <p>
+    <blockquote cite="청춘예찬"> 웅대한 <u>황금시대</u>의 같은 시들어 곧 착목한는 보내는 미묘한 있다. 위하여 어디 사라지지 <strike>황금시대</strike>의 <s>군영</s>과 불어
+        어디 <ins>인류의</ins> 듣기만 것이다.<br>
+        <s>이 부분은 중요하지 않은 텍스트입니다.</s>
+        <del>이 부분은 삭제된 텍스트입니다.</del>
+    </blockquote>
+    </p>
+
+    <p>
+        <abbr title="World Health Organization">WHO</abbr>
+        <acronym title="National Aeronautics and Space Administration">NASA</acronym>
+        <marquee> 움직이는 글자 </marquee>
+        <mark> 형광글자 </mark>
+        <CENTER>가운데정렬</CENTER>
+    <pre>
+                입력한대로
+                    그대로 나오는 태그
+    
+                        &lt; &gt; &copy; &amp; &raquo; &laquo; &nbsp;
+        </pre>
+
+    <xmp>
+        <p>
+            <abbr title="World Health Organization">WHO</abbr>
+            <acronym title="National Aeronautics and Space Administration">NASA</acronym>
+            <marquee> 움직이는 글자 </marquee>
+            <mark> 형광글자 </mark>
+            <CENTER>가운데정렬</CENTER>
+        <pre>
+                입력한대로
+                    그대로 나오는 태그
+    
+                        &lt; &gt; &copy; &amp; &raquo; &laquo; &nbsp;
+        </pre>
+        </p>
+    </xmp>
+
+    <details open>
+        <summary> HTML이란?? </summary>
+        <p> 하이퍼텍스트 마크업 언어입니다.</p>
+    </details>
+
+    <input type="text" list="browser">
+    <datalist id="browser">
+        <option value="Internet Explorer">
+        <option value="google Chrome">
+        <option value="firefox">
+        <option value="Opera">
+    </datalist>
+
+    <address> Copyright All Right Reserved </address>
+    <p> p태그 안에 address는 포함될 수 없다.
+    <address> C All R Res </address>
+    </p>
+
+    <address>
+        <p> address태그 안의 p태그는 포함될 수 있다.</p>
+    </address>
+
+    <p>작성자: John Doe</p>
+    <address>
+        1234 Main St.<br>
+        Anytown, CA 12345<br>
+        USA
+    </address>
+
+    <ul>
+        <p> </p> xxxx
+        <div> </div> xxxx
+        <li> 목록 <div></div>
+            <p></p> 0000
+        </li>
+    </ul>
+
+    <ul>
+        <li>항목 1</li>
+        <li>항목 2</li>
+        <li>항목 3</li>
+    </ul>
+
+    <a href="#"> 출발지</a>
+    <a name="bottom"> 목적지 </a>
+
+
+    <a href="http://maps.google.com/maps?q=모란역&z=16">지도보기</a>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.210828347393!2d127.12687531530784!3d37.43212397982318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca88171af4d9b%3A0xef93af700c7b065e!2z66qo656A7Jet!5e0!3m2!1sko!2skr!4v1681695860970!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div id="map" style="width:500px;height:400px;"></div>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=12dea5708c1b615d46fcd12f97e48f12">
+    </script>
+
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.4303995, 127.129003833), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/* 1. 탭메뉴의 a태그를 박스처리한다.
+2. 탭메뉴의 li태그는 float처리한다.
+3. 부모태그인 ul은 float해제 처리한다.
+(5가지 공식)
+4. 탭컨텐츠는 숨김처리한다.
+5. :target으로 제어한다. */
+
+h1{
+    width: 600px;
+    text-align: center;
+}
+
+a{
+    display: block;
+    padding: 10px 0;
+    font:bold 16px "helvetica";
+    color:darkred;
+    background: #eee;
+    text-align: center;
+}
+
+ul{
+    width:610px;
+    height: 40px;
+    border:0.5px solid snow;
+}
+
+ul>li{
+    width:calc(99%/5);
+    height:40px;
+    float:left;
+    /* margin:1px; */
+}
+
+/* 마지막 li를 제외한 나머지를 선택하여
+우측에 테두리를 준다. */
+
+ul>li:not(:last-child)
+{
+    border-right: 1px solid lightgray;
+}
+
+section{margin:20px;}
+
+p{
+    width: 589px;
+    /* border: 3px solid orange;  */
+    padding:5px;
+    background: gold; 
+    font-weight: bold;
+    height:142px;
+    text-align: justify;
+    word-break: break-all;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    
+}
+
+p>img{
+    border: 2px solid violet;
+    /* margin: 1px; */
+}
+
+div>p{
+    display: none;
+}
+
+div>p:target{
+    display: block;
+    /* border: 5px solid black; */
+}
+
+ul>li:hover>a{
+    /* width: 70%; */
+    background-color: #4CAF50;
+    color: white;
+    opacity: 0.9;
+    transition: 0.4s;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 0px;
+}
+
+/* 메뉴 활성화 정의 */
+
+.active{
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 0;
+}
+
+ul>li>a{
+    /* border-bottom: 3px solid black; */
+    box-sizing: border-box;
+    border-bottom: 3px solid black;
+}
+

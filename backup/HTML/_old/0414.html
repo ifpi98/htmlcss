@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블</title>
+</head>
+
+<body>
+    <h1> 점수표 </h1>
+
+    <table border="1" cellspacing="1" cellpadding="2" width="500">
+        <caption>학생 성적 테이블</caption>
+        <colgroup>
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:auto">
+        </colgroup>
+
+        <thead bgcolor="gold">
+            <tr>
+                <th colspan="4"> IT아카데미 </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="col">학생 이름</th>
+                <th scope="col">중간 고사</th>
+                <th scope="col">기말 고사</th>
+                <th>비고</th>
+            </tr>
+            <tr align="center">
+                <td scope="row">홍길동</td>
+                <td>98</td>
+                <td>99</td>
+                <td rowspan="3"> X </td>
+            </tr>
+            <tr>
+                <td width="100">김철수</td>
+                <td>80</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>김가나</td>
+                <td>90</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>비고</td>
+                <td colspan="3">XX</td>
+            </tr>
+        </tbody>
+
+        <tfoot bgcolor="gray">
+            <tr>
+                <td>총점</td>
+                <td>???</td>
+                <td colspan="2">???</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+    <!-- 홍길동 98 99
+김철수 80 89 -->
+    <hr>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5"> <img src="./imgs/icon2.gif">시간표</th>
+            </tr>
+            <tr>
+                <th>mon</th>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thu</th>
+                <th>fri</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>국어</td>
+                <td>수학</td>
+                <td>영어</td>
+                <td>과학</td>
+                <td rowspan="3">휴강</td>
+            </tr>
+            <tr>
+                <th colspan="4">점심시간</th>
+            </tr>
+            <tr>
+                <td>국어</td>
+                <td>수학</td>
+                <td>영어</td>
+                <td>과학</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- table>tr*5>td*5{국어} -->
+
+</body>
+
+</html>

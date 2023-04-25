@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 웹 표준을 위한 태그</title>
+    <style>
+        /* 이 곳이 일반적인 style태그가 들어가는 곳 */
+    </style>
+
+</head>
+
+<body>
+    <h1> 웹표준을 위한 마크업 공식</h1>
+    <!-- 1. 이미지에 alt속성 반드시 입력하고 속성 사이는 띄어쓰기한다. -->
+    <img src="./imgs/image1.jpg" alt="이미지설명" width="100" height="100%">
+    <!-- 2. table에 들어가는 속성은 css로 처리한다. -->
+    <table width="100" height="100" cellspacing="1" cellpadding="1">
+    <!-- 잘못된 방식 -->
+    </table>
+
+    <table style="border-collapse: collapse;">
+        <colgroup>
+            <col style="width:100px">
+            <col style="width:100px">
+        </colgroup>
+    </table>
+
+    <!-- 3. section 태그에는 heading 머리말태그가 포함되어야 한다. -->
+    <section>
+        <h2 aria-label="제목2"> 섹션 제목 </h2>
+    </section>
+
+    <style>
+        /* css코딩 - 작동을 하지만... 위치선정잘못
+        순서상 태그 작업이 된 이후에 화면이 바뀌게 된다. */
+    </style>
+
+        <!-- 5. ul, ol 태그 내부에는 div태그 등 기타 다른 태그가 자식으로 존재할 수 없다. -->
+        <!-- div태그를 ul, ol태그로 감쌀 수 있다.(wrapper) -->
+
+        <ul>
+            <div> 목록 제목 -> xxxxx </div>
+            <li> 목록 </li>
+        </ul>
+        <!-- ul - li가 부모 자식간의 관계인데 그곳의 div가 들어가면 좋지 않다. -->
+
+        <!-- 아래가 좋은 예 div - ul - li의 형태 -->
+        <div>
+            <ul>
+                <li>
+                    <a href="#">메뉴</a>  
+                </li>
+            </ul>
+        </div>
+        <!-- div는 영역을 그룹핑하기 위한 역할 -->
+
+        <!-- 6. p태그 내부에 h제목 태그를 넣으면 안된다. 그 반대도 안된다. -->
+        <p>
+            문단 시작
+            <h2>             제목             </h2>
+            문단 끝
+        </p>
+
+        <h2> 제목 시작
+            <p> 문단 시작과 끝</p>
+        </h2>
+        <!-- 문단 안에 제목을 넣거나, 제목 안에 문단을 넣는 것 모두 이상하다. -->
+
+        <!-- address태그는 p태그를 자식태그로 넣을 수 있다. -->
+        <address> 주소 <p> 내용 </p></address>
+        <!-- p태그에 div태그가 들어갈 수 없다. 그 반대는 가능하다. -->
+        <p> 문단 <div> 구분 </div> 문단 끝</p>
+        <div> 구분 <p>  문단의 시작과 끝</p> 구분 끝</div>
+
+        <!-- 7. meta, title, html태그는 반드시 입력한다. -->
+
+        <!-- 8. a태그 내부에 label태그가 자식으로 존재하면 안된다. 그 반대는 상관없음. -->
+        <a href="#"> <label> 링크 ---- XXXXX </label></a>  
+        <label for=""> <a href="#"> 링크 </a></label>
+
+        <button> 버튼 </button> <a href="#"> click </a> 
+        <a href="#"> <button> 버튼 </button></a> <b> --xxxx </b>
+
+        <!-- 9. div태그는 span태그의 자식으로 존재할 수 없다. -->
+        <div>
+            <span> 
+                welcome
+            </span>
+        </div>
+        
+        <span>
+            <div>
+                box -- xxxxx
+            </div>
+        </span>
+
+        <!-- 10. ul태그 등, 텍스트가 단독으로 존재해서는 안된다. -->
+        welcome -- XXXXX
+        <ul>
+            목록태그
+            <li> welcome </li>
+        </ul>
+        <!-- 컨텐츠는 모두 태그 안에 소속되어야 한다. -->
+
+        <!-- 11. a태그 내부에 자식으로 a태그를 삽입하면 안된다. -->
+        <a href="#"> <a href=#> xxxxx </a> </a>
+       
+        <!-- 12. nav태그에 대해서 -->
+        <nav>
+            <h2> 글로벌 네비게이션바 -- XXXX </h2>
+            <ul>
+                <li>
+                    <a href="#"> 메뉴1 </a>
+                </li>
+            </ul>
+        </nav>
+
+
+</body>
+
+</html>

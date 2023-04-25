@@ -1,0 +1,97 @@
+/* 속성선택자 */
+div[class=box]{
+    border: 5px solid rgba(255, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+p[class=title]{
+    text-align: center;
+    background: lime;
+    border: 1px solid red;
+    margin: 10px auto;
+    width: 50%;
+}
+
+input[type=text]{
+    color: blue;
+    padding: 5px;
+    margin: 10px;
+}
+
+div[class=box]+ul{
+    width: 400px;
+    border:3px solid black;
+    box-shadow: 4px 4px gray;
+    padding:10px;
+}
+
+div[class=box]~ul{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding:20px;    
+    width: 300px;
+    margin: 10px;      
+}
+
+a{
+    font-style: italic;
+}
+
+/* reset.css , common.css */
+a:link{
+    font-weight: bold;
+}
+a:hover{
+    background-color: pink;
+}
+a:active{
+    text-decoration: underline;
+}
+a:visited{
+    /* text-decoration: line-through; */
+    color: blue;
+}
+
+ol>li:first-child{
+    background: red;
+}
+ol>li:last-child{
+    background: orange;
+}
+ol>li:nth-child(2n){
+    background: orange;
+}
+ol>li:nth-child(2n+1){
+    background: pink;
+}
+ol>li:nth-child(3){
+    background: red;
+}
+
+ol>li:first-of-type{
+    font-size: 20px;
+}
+
+ol>li:last-of-type{
+    font-size: 28px;
+}
+
+ol>li:nth-of-type(2){
+    /* color: red; */
+    background: gray;
+}
+
+h3:last-of-type{
+    background: red;
+}
+
+h2:nth-of-type(2){
+    background: crimson;
+}
+
+h2:last-of-type{
+    background: crimson;
+}

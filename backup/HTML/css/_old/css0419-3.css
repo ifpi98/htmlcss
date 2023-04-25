@@ -1,0 +1,84 @@
+p:first-letter{
+    font-size: 2em;
+    color: blue;
+}
+
+p:first-line{
+    text-decoration: underline;
+}
+
+p::selection{
+    background-color: red;
+    color: white;
+}
+
+p{
+    /* user-select: none; */
+    /* 마우스 드래그 방지 - 복사방지 */
+    border:1px solid black;
+    margin:10px; padding:10px;
+    text-align: justify;
+    /* justify는 양쪽 정렬을 의미함 */
+    /* 글자 간격 맞추기 */
+    /* word-break:break-all; */
+    /* 문자를 강제로 줄바꿈 */
+
+    /* 하이픈 넣기 */
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    
+    white-space: normal;
+    /* 공백이 있으면 줄바꿈 */
+}
+
+p::before{
+    content:'-문단시작;';
+    color: blue;
+}
+
+p::after{
+    content:'-문단종료-';
+    color: blue;
+}
+
+p::before{
+    content:'';
+    display: block;
+    height: 5px;
+    background: blue;
+    width: 0px;
+    transition:0.3s;
+}
+
+p:hover::before{
+    width: 100%;
+    
+}
+/* p태그에 마우스를 올리면 문단앞을 선택하라 */
+
+
+p::after{
+    content:'';
+    display: block;
+    height: 5px;
+    background: red;
+    width: 0px;
+    transition:1s;
+    transition-delay: 1s;
+}
+
+p:hover::after{
+    width: 100%;
+    
+}
+/* p태그에 마우스를 올리면 문단앞을 선택하라 */
+
+/* ol::before{
+    content:'-목록시작;';
+    color: blue;
+}
+
+ol::after{
+    content:'-목록종료-';
+    color: blue;
+} */

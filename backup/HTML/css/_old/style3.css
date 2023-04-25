@@ -1,0 +1,56 @@
+ul>li>a{
+    display: block;
+    padding: 10px; 
+    color: white;
+}
+
+ul>li{
+    background: linear-gradient(180deg, darkgreen, lime);
+    float: left;
+    width: 18%;
+    text-align: center;
+    font-weight: bold;
+    /* font-size: 12px; */
+    border-right: 1px solid gray;    
+}
+
+ul>li:nth-child(5){
+    border-right: none;
+}
+
+h1:last-of-type{
+    clear:left;
+    margin-top: 75px;
+    /* border: 1px solid red; */
+}
+
+
+ul>li>a:hover{
+    text-shadow: 2px 1px black;
+}
+
+/* ul>li:nth-child(1){
+    border-right: 1px solid gray;
+}
+ul>li:nth-child(2){
+    border-right: 1px solid gray;
+}
+ul>li:nth-child(3){
+    border-right: 1px solid gray;
+}
+ul>li:nth-child(4){
+    border-right: 1px solid gray;
+} */
+
+
+ul{
+    margin:20px;
+}
+
+ul>li:first-child{
+    border-radius: 10px 0 0 0;
+}
+
+ul>li:last-child{
+    border-radius: 0 10px 0 0;
+}

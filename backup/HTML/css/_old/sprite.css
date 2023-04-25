@@ -1,0 +1,154 @@
+/* 메뉴의 크기는 116*76
+전체 ul의 크기는 580px, 가운데정렬
+a태그는 block처리
+li, a태그는 116*38 크기로 정한다. */
+
+ul{
+    width: 580px;
+    margin: auto;   /* 박스 가운데 정렬 */
+}
+
+ul>li{
+    float:left;
+    /* 박스 가로방향으로 배치 */
+    width: 116px;
+    height: 38px;
+    background: url(../imgs/menu.png);
+}
+
+ul>li>a{
+    display: block;
+    text-indent: -9999px;
+    /* 글자 숨김 처리 - 들여쓰기를 하는 방식으로 */
+}
+
+ul::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+ul{
+    margin:30px auto;
+}
+
+/* 이미지 스프라이트처리 position으로 이동 */
+ul>li:nth-child(1){
+    background-position: 0 0 ;
+}
+ul>li:nth-child(2){
+    background-position: -116px 0 ;
+}
+ul>li:nth-child(3){
+    background-position: calc(-116px *2) 0 ;
+}
+ul>li:nth-child(4){
+    background-position: calc(-116px *3) 0 ;
+}
+ul>li:nth-child(5){
+    background-position: calc(-116px *4) 0 ;
+}
+
+ul>li:nth-child(1):hover{
+    background-position: 0 -38px ;
+}
+ul>li:nth-child(2):hover{
+    background-position: -116px -38px ;
+}
+ul>li:nth-child(3):hover{
+    background-position: calc(-116px *2) -38px ;
+}
+ul>li:nth-child(4):hover{
+    background-position: calc(-116px *3) -38px ;
+}
+ul>li:nth-child(5):hover{
+    background-position: calc(-116px *4) -38px ;
+}
+
+ol a{
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+ol{
+    width: 980px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+}
+
+ol li{
+    background: url('../imgs//vmenu.png');
+    flex: 1;
+}
+
+:root{
+    --width:-50px;
+}
+
+ol li:nth-child(1){
+    background-position: 0 calc(var(--width) * 0);
+}
+ol li:nth-child(2){
+    background-position: 0 calc(var(--width) * 1);
+}
+ol li:nth-child(3){
+    background-position: 0 calc(var(--width) * 2);
+}
+ol li:nth-child(4){
+    background-position: 0 calc(var(--width) * 3);
+}
+ol li:nth-child(5){
+    background-position: 0 calc(var(--width) * 4);
+}
+ol li:nth-child(6){
+    background-position: 0 calc(var(--width) * 5);
+}
+ol li:nth-child(7){
+    background-position: 0 calc(var(--width) * 6);
+}
+
+ol li:nth-child(1):hover{
+    background-position: 0 calc(var(--width) * 7);
+}
+ol li:nth-child(2):hover{
+    background-position: 0 calc(var(--width) * 8);
+}
+ol li:nth-child(3):hover{
+    background-position: 0 calc(var(--width) * 9);
+}
+ol li:nth-child(4):hover{
+    background-position: 0 calc(var(--width) * 10);
+}
+ol li:nth-child(5):hover{
+    background-position: 0 calc(var(--width) * 11);
+}
+ol li:nth-child(6):hover{
+    background-position: 0 calc(var(--width) * 12);
+}
+ol li:nth-child(7):hover{
+    background-position: 0 calc(var(--width) * 13);
+}
+
+ol li:nth-child(1):active{
+    background-position: 0 calc(var(--width) * 0);
+}
+ol li:nth-child(2):active{
+    background-position: 0 calc(var(--width) * 1);
+}
+ol li:nth-child(3):active{
+    background-position: 0 calc(var(--width) * 2);
+}
+ol li:nth-child(4):active{
+    background-position: 0 calc(var(--width) * 3);
+}
+ol li:nth-child(5):active{
+    background-position: 0 calc(var(--width) * 4);
+}
+ol li:nth-child(6):active{
+    background-position: 0 calc(var(--width) * 5);
+}
+ol li:nth-child(7):active{
+    background-position: 0 calc(var(--width) * 6);
+}

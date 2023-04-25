@@ -1,0 +1,160 @@
+#mama{
+    border:1px solid red;
+    padding:5px;
+}
+
+
+div.box{
+    border: 1px solid black;
+    width: auto;
+    /* width: 100$; */
+    float: left;
+    padding: 10px;
+}
+
+h2{ clear: both;}
+#mama{ 
+    /* float: left; */
+    margin: auto;
+    width: 375px;
+    /* overflow: hidden; */
+    /*   */
+}
+
+/* #mama::after{ 
+} */
+
+/* #mama:hover{
+    overflow: visible;
+} */
+
+/* #box3{
+    height: 50px;
+    background: red;
+} */
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 자주 쓰는 방식. 클래스에 등록하여 쓰기도 함 */
+
+#mama2{
+    border:1px solid;
+    text-align: center;
+    /* padding:5px; */
+}
+
+
+div.box1{
+    border: 1px solid;
+    /* display: inline-block; */
+    display: inline;
+    margin:10px;
+    padding:10px;
+    /* line-height: 3; */
+    float: left;
+}
+
+.box2, #mama3{
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 5px;
+}
+
+#mama3{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .box2{
+    flex:1;
+}
+
+.box2:nth-child(3){
+    flex:2;
+}
+
+.box2:nth-child(2){
+    flex:3;
+} */
+
+#mama3:hover{
+    justify-content: space-around;
+}
+
+#mama3:active{
+    justify-content: space-evenly;
+}
+
+#mama4{
+    border: 1px solid;
+    width: 500px; 
+    height: 300px;
+    position: relative;
+    /* overflow: hidden; */
+
+}
+
+.box3{
+    border: 1px solid red;
+    width:100px; 
+    height: 100px;
+    background: gray;
+    position: absolute;
+}
+
+.box3:nth-child(1){
+    left:0;
+    top:0;
+    background: red;
+}
+
+.box3:nth-child(2){
+    left: 120px;
+    top: 50px;
+    background: blue;
+}
+
+.box3:nth-child(3){
+    left: 240px;
+    top:0;
+    background: pink;
+}
+
+.box3:nth-child(4){
+    right: 130px;
+    top:100px;
+    background: magenta;
+}
+
+.box3:nth-child(5){
+    right: 10px;
+    bottom: 100px;
+    background: palegreen;
+    position: sticky !important;
+}
+
+#mama4{
+    left:100px;
+    top:-50px;
+    position: sticky !important;
+}
+
+#mama5{
+    border:1px solid red;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: sticky;
+    left:100px; 
+    top:100px;
+    background-color: pink;
+}
+
+.box4{
+    border: 1px solid blue;
+    margin: 5px;
+}
+
+section{height: 2000px;}

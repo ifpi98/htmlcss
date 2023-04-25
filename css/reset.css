@@ -19,3 +19,19 @@ table{
     border-collapse: collapse;
     /* 표테두리 단일실선 */
 }
+
+a:link{
+    color:black
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color:gray;
+}
+
+a:visited{
+    color:green;
+}

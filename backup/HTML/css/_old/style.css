@@ -1,0 +1,38 @@
+/* CSS 초기화 */
+*{margin:0; padding:0;}
+
+h3{ background-color: gold;}
+
+.abc{
+    background-color: pink;
+}
+
+h4.abc{
+    background-color: tomato;
+}
+
+#abc{
+    border: 3px solid red;
+}
+
+a{}
+li>a{}
+ul>li>a{}
+li a{ font-size: 28px;}
+ul li a{ 
+    text-decoration: none;
+}
+ul a{ 
+    color: black;
+    /* margin: 5px;
+    padding: 5px; */
+    border:1px solid red;
+}
+/* html body ul li a{} <- 이렇게도 가능함*/ 
+
+ul>li{ margin:20px; padding:10px;
+border:1px solid;}
+
+ul>li>ul>li>ul>li>a{
+    color:chartreuse;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> 입력양식태그 </h1>
+    <h2> 회원가입 </h2>
+
+    <form action="http://127.0.0.1:5500/result.html" method="get">
+        <fieldset>
+            <legend> 필수개인정보 </legend>
+            <label for="name"> 이름 :</label>
+            <input type="text" name="name" id="name" size="10" minlength="2" maxlength="8">
+            <br>
+            <label>
+                아이디 : <input type="text" placeholder="영문숫자만 입력하세요." size="16" name="id" required>
+                <input type="button" value="중복검사">
+            </label>
+            <br>
+            <label>
+                비밀번호 :
+                <input type="password" size="10"> 
+            <br>
+            </label>
+            <label>
+                비밀번호확인 : <input type="password" size="10">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> 추가입력사항 </legend>
+                ♣ 성별 -
+            <label for="woman">여성</label>
+            <input type="radio" name="gender" value="woman" id="woman">
+            <label for="man">남성</label>
+            <input type="radio" name="gender" value="man" id="man">
+            <label for="etc">기타</label>
+            <input type="radio" name="gender" value="etc" id="etc" checked>
+            <br>
+            <label>
+                이메일 :
+                <input type="email" name="email" id="email">
+            </label>
+            <br>
+                취미 :
+            <label for="mountain">등산</label>
+            <input type="checkbox" name="hobby1" id="mountain" checked>
+            <label for="internet">인터넷</label>
+            <input type="checkbox" name="hobby2" id="internet">
+            <label for="game">게임</label>
+            <input type="checkbox" name="hobby3" id="game">
+            <label for="book">독서</label>
+            <input type="checkbox" name="hobby4" id="book"> 
+            <br>
+
+            <label>
+                신발크기 <select name="shoes">
+                    <optgroup label="여성용">
+                        <option value="220">220mm</option>
+                        <option value="230">230mm</option>
+                        <option value="240">240mm</option>
+                        <option value="250">250mm</option>
+                    </optgroup>
+                    <optgroup label="남성용">
+                        <option selected value="260">260mm</option>
+                        <option value="270">270mm</option>
+                        <option value="280">280mm</option>
+                        <option value="290">290mm</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br>
+            <label for="birthday">생년월일 :</label>
+            <input type="date" name="birthday" id="birthday">
+            <br>
+            <label for="favoritecolor">좋아하는 색 :</label>
+            <input type="color" name="favoritecolor" id="favoritecolor">
+            <br>
+            <label for="age">연령대는 :</label>
+            <input type="number" step="10" max="100" min="10, name="age" id="age">
+            <br>
+            <label for="month">입사월 :</label>
+            <input type="month" name="month" id="month">
+            <br>
+            <label for="tel">전화번호 :</label>
+            <input type="tel" name="tel" id="tel">
+            <br>
+        </fieldset>
+            <!-- <label for="file">제출서류 :</label>
+            <input type="file" name="file" id="file"><br>
+        <hr>
+        <input type="submit" value="전송"> -->
+        <input type="reset" value="다시 쓰기">
+    </form>
+    <hr>
+    <form action="http://www.daum.net" method="post" enctype="multipart/form-data">
+        제출서류 : <input type="file"> <br>
+        자기소개서 : <br>
+        <textarea cols="100" rows="10" style="resize: none;"> 
+        하고싶은 말... 
+        </textarea><br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="다시 쓰기">
+    </form>
+
+    <a href="tel:010-444-7777"> 전화걸기</a> <br>
+    <a href="sms:010-444-7777"> 문자보내기</a> <br>
+    <a href="mailto:010-444-7777"> 이메일보내기</a> <br>
+</body>
+
+</html>

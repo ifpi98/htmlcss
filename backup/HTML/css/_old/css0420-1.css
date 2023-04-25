@@ -1,0 +1,99 @@
+/* 1. 탭메뉴의 a태그를 박스처리한다.
+2. 탭메뉴의 li태그는 float처리한다.
+3. 부모태그인 ul은 float해제 처리한다.
+(5가지 공식)
+4. 탭컨텐츠는 숨김처리한다.
+5. :target으로 제어한다. */
+
+a{
+    display: block;
+    padding: 10px 0;
+    font:bold 16px "helvetica";
+    color:darkred;
+    background: #eee;
+    text-align: center;
+}
+
+ul{
+    width:600px;
+    height: 40px;
+    border:0.5px solid snow;
+}
+
+ul>li{
+    width:calc(99%/3);
+    height:40px;
+    float:left;
+    /* margin:1px; */
+}
+
+/* 마지막 li를 제외한 나머지를 선택하여
+우측에 테두리를 준다. */
+
+ul>li:not(:last-child)
+{
+    border-right: 1px solid lightgray;
+}
+
+section{margin:20px;}
+
+p{
+    border: 3px solid orange; padding:5px;
+    background: gold; font-weight: bold;
+    height:100px;
+    text-align: justify;
+    word-break: break-all;
+    /* line-height: 100px; */
+    /* vertical-align: middle; */
+}
+
+article>p{
+    display: none;
+}
+
+article>p:target{
+    display: block;
+}
+
+ul>li:hover>a{
+    background: ivory;
+}
+
+/* ul>li::after{
+    content:"aaa";
+} */
+
+ul>li>a::after{
+    content:"";
+    display: block;
+    height: 5px;
+    background-color: red;
+    width: 0%;
+    margin:auto;
+    transition: 0.4s;
+}
+
+ul>li:hover>a::after{
+    width: 70%;
+    transition: 0.4s;
+}
+
+/* li 메뉴에 마우스 올리면 자식 a태그 
+뒷공간에 있는 박스의 width값을 변동한다. */
+
+ul>li>a::before{
+    content:"";
+    display: block;
+    height: 5px;
+    background-color: blue;
+    width: 0%;
+    margin:auto;
+    transition: 0.4s;
+}
+
+ul>li:hover>a::before{
+    width: 70%;
+    transition: 0.4s;
+    transition-delay: 0.4s;
+}
+

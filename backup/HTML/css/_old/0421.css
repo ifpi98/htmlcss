@@ -1,0 +1,84 @@
+.box{
+    width: 400px;
+    height: 400px;
+    border: 10px solid rgba(255,0,0,0.2);
+    margin: 10px;
+    /* box-sizing: content-box; */
+    padding: 10px;
+    background-image: url(../imgs/smallbear.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.box:hover{
+    /* background-color: cyan; */
+    /* 테두리까지 포함하여 색상이 변경된다. */
+    /* box-sizing: border-box; */
+    /* background-image: url(../imgs/smallbear.png);
+    background-repeat: repeat-x; */
+    /* background-position: center; */
+    /* transition: 0.5s; */
+}
+
+.box:active{
+    /* background-repeat: repeat-y; */
+    /* background-position: right center; */
+}
+
+.box:first-of-type{
+    /* background-attachment: fixed; */
+    /* background-position: right top; */
+}
+
+.box{
+    background-origin: border-box;
+    background: pink url(../imgs/smalldeer.png) center center no-repeat;
+}
+
+.box:hover{
+    background-origin: padding-box;
+    /* transition: 0.5s; */
+    
+}
+
+.box:active{
+    background-origin: border-box;
+    /* transition: 0.5s; */
+}
+
+.box:nth-of-type(2){
+    /* background-size: 200px 250px; */
+    /* 그림을 지정한 사이즈로 표시 */
+    
+    /* background-size: contain; */
+    /* 그림을 잘리지 않게 하면서 비율 유지 */
+}
+
+.box:nth-of-type(2):hover{
+    /* background-size: cover;     */
+    /* 비율을 유지하지만 그림이 잘릴 수도 있음 */
+}
+
+.box:nth-of-type(2):active{
+    /* background-size: 100% 100%;     */
+    /* 박스의 크기에 맞게 비율 관계없이 조정 */
+}
+
+.box:nth-of-type(2){
+    background: url(../imgs/smallbear.png), url(../imgs/smalldeer.png);
+    background-size: 200px 200px, 250px 150px;
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+
+.box:nth-of-type(2):hover{
+    background-position: right top, left bottom;
+    transition: 1s;
+    background-size: 33% 33%, 33% 33%;
+}
+
+.box:nth-of-type(2):active{
+    background-position: right bottom, left top;
+    transition: 1s;
+    background-size: 33% 33%, 33% 33%;
+}

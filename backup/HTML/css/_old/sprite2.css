@@ -1,0 +1,78 @@
+/* 메뉴의 크기는 140*50
+전체 ul의 크기는 700px, 가운데정렬
+a태그는 block처리
+li, a태그는 140*50 크기로 정한다. */
+
+ul{
+    width: 700px;
+    margin: auto;   /* 박스 가운데 정렬 */
+}
+
+ul>li{
+    /* float:left; */
+    /* 박스 가로방향으로 배치 */
+    width: 140px;
+    height: 50px;
+    background: url(../imgs/vmenu.png);
+}
+
+ul>li>a{
+    display: block;
+    text-indent: -9999px;
+    /* 글자 숨김 처리 - 들여쓰기를 하는 방식으로 */
+}
+
+ul::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+ul{
+    margin:30px auto;
+}
+
+/* 이미지 스프라이트처리 position으로 이동 */
+ul>li:nth-child(1){
+    background-position: 0 0 ;
+}
+ul>li:nth-child(2){
+    background-position: 0 -50px ;
+}
+ul>li:nth-child(3){
+    background-position: 0 calc(-50px *2);
+}
+ul>li:nth-child(4){
+    background-position: 0 calc(-50px *3);
+}
+ul>li:nth-child(5){
+    background-position: 0 calc(-50px *4);
+}
+ul>li:nth-child(6){
+    background-position: 0 calc(-50px *5);
+}
+ul>li:nth-child(7){
+    background-position: 0 calc(-50px *6);
+}
+
+ul>li:nth-child(1):hover{
+    background-position: 0 calc(-50px *7);
+}
+ul>li:nth-child(2):hover{
+    background-position: 0 calc(-50px *8);
+}
+ul>li:nth-child(3):hover{
+    background-position: 0 calc(-50px *9);
+}
+ul>li:nth-child(4):hover{
+    background-position: 0 calc(-50px *10);
+}
+ul>li:nth-child(5):hover{
+    background-position: 0 calc(-50px *11);
+}
+ul>li:nth-child(6):hover{
+    background-position: 0 calc(-50px *12);
+}
+ul>li:nth-child(7):hover{
+    background-position: 0 calc(-50px *13);
+}

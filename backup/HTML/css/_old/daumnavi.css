@@ -1,0 +1,49 @@
+nav>ul>li{
+    float:left;
+}
+
+nav>ul>li>a{
+    display: block; padding: 10px;
+    color: black;
+}
+
+/* float처리 해제하기 */
+nav>ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav>ul{
+    width: 600px; margin:10px auto;
+    /* border:5px solid black; */
+}
+
+nav>ul>li{
+    width: 20%; text-align: center;
+}
+
+nav>ul>li:hover{
+    background: lightgray;
+}
+
+nav>ul>li>a::after{
+    content: '';
+    height: 5px;
+    background: red;
+    display: block;
+    width: 0px;
+    transition: 0.5s;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+nav>ul>li>a:hover:after{
+    width:100%;
+}
+
+nav>ul>li{
+    background: darkgray;
+}

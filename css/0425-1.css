@@ -1,0 +1,59 @@
+.borderimg{
+    border: 10px solid transparent;
+    padding: 10px;
+    border-image: url(../imgs/borderimage1.png) 30 stretch;
+    margin: 30px;
+
+    /* border-image-source: ;
+    border-image-slice: ;
+    border-image-width: ;
+    border-image-outset: ;
+    border-image-repeat: ; */
+   
+}
+
+.borderimg:hover{
+    border-image: url(../imgs/borderimage1.png) 30 repeat;
+}
+
+.borderimg:active{
+    border-image: url(../imgs/borderimage1.png) 30 space;
+}
+
+.borderimg2{
+    border: 20px solid transparent;
+    padding: 10px;
+    border-image: url(../imgs/borderimage3.png) 25 stretch;
+    margin: 30px;
+}
+
+.borderimg3{
+    border: 50px solid transparent;
+    padding: 20px;
+    border-image: url(../imgs/borderimage4.png) 50 space;
+    margin: 30px;
+    height: 100px;
+}
+
+.borderimg4{
+    border: 20px solid transparent;
+    padding: 20px;
+    border-image: url(../imgs/specialbp1.jpg) 20 round;
+    margin: 30px;
+}
+
+ul{
+    margin: 30px;
+}
+
+ul>li{
+    list-style-type: decimal;
+    list-style-position: inside;
+    list-style-image: url(../imgs/icon1.gif);
+    /* list-style: none;
+    list-style: upper-alpha inside; */
+}
+
+ul>li:hover{
+    list-style-image: url(../imgs/icon2.gif);
+}
