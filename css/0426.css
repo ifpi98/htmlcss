@@ -1,0 +1,99 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
+
+.box:nth-of-type(1){
+    left: 0px;
+    top: 50px;
+}
+
+.box:nth-of-type(2){
+    background-color: blue;
+    left: 50px;
+    top: 100px;
+}
+
+.box:nth-of-type(3){
+    background-color: orange;
+    left: 100px;
+    top: 150px;
+}
+
+.box:nth-of-type(1):hover{
+    z-index: 1;
+}
+
+.box:nth-of-type(2):hover{
+    z-index: 2;
+}
+
+.wrap{
+    border:1px solid red;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.wrap:hover{
+    overflow: visible;
+}
+
+.wrap:active{
+    overflow: scroll;
+}
+
+.shadow{
+    width: 400px;
+    height: 100px;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px 1px black;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 100px;
+    /* margin: auto; */
+}
+
+.shadow:hover{
+    box-shadow: inset 5px 5px 5px 1px black;    
+}
+
+.shadow:active{
+    box-shadow: 5px 5px 5px gold, 
+    -10px -10px 10px 10px red, 
+    15px 15px 20px orange;
+}
+
+.shadow{
+    font-size: 2em;
+    text-shadow: 2px 2px 2px gold;
+}
+
+.shadow:hover{
+    text-shadow: 2px 2px 2px gold,
+                2px -5px 2px orange;
+}
+
+.shadow:active{
+    text-shadow: 2px 2px 2px gold,
+            -2px -5px 4px orange,
+            -2px -8px 6px red;
+    background-color: black;
+    color:white;
+}
+
+.sample{
+    /*** Your CSS code ***/
+    border-style: solid;
+    border-width: 65px 78px 69px 47px;
+    -webkit-border-image: url("../imgs/beverage1.jpg") 105 65 82 38 stretch round; 
+    /* height:auto; */
+}
+
+
+
+
