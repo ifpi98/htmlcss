@@ -1,0 +1,119 @@
+/* 서브메뉴 ol이 absolute처리하면
+메인메뉴 li를 relative하거나,
+메인메뉴 li를 감싸는 ul을 relative한다.
+
+ul과 li의 width는 같게 설계할 예정
+서브메뉴의 위치는 left:100%;하면
+width만큼 offset이 생긴다. */
+
+ul a{
+    display: block;
+    color: white !important;
+    padding:10px;
+    /* margin:10px; */
+}
+
+ul{
+    width: 200px; 
+    margin: 30px;
+    text-indent: 10px;
+    
+}
+
+ol{
+    display: none;
+    position: absolute;
+    /* padding:10px; */
+}
+
+ul li{
+    background-color: darkblue;
+}
+
+ul li:hover{
+    background: black;
+    text-indent: 15px;
+    transition: 0.5s;
+}
+
+ul>li{
+    position: relative;
+    /* padding: 10px; */
+}
+
+ul>li:hover>ol{
+    display: block;
+    /* width:180px; */
+    width: 100%;
+    left:100%;
+    top: 0px;
+}
+
+ol>li{
+    background-color: teal;
+    position: relative;
+    /* padding: 10px; */
+}
+
+/* ol a{
+    padding: 10px;
+} */
+/* 마지막 리스트 li만 제외하고 선택해서 아래쪽 테두리 넣자. */
+:not(:last-child){
+    border-bottom: 1px dotted white;
+}
+
+dl{
+    display: none;
+    position: absolute;
+}
+
+ol>li:hover>dl{
+    display: block;
+    /* width: 100%; */
+    width: 180px;
+    left:100%;
+    top:0;
+}
+
+dt, dd{
+    /* position: relative; */
+    background: lightgreen;
+    text-indent: 15px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+dt:hover, dd:hover{
+    background-color: aqua;
+    color: white !important;
+    cursor: pointer;
+}
+
+ul>li>a{
+    position: relative;
+}
+
+ul>li>a::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    right: 0;
+    top: 10px;
+    border-left-color: gray;
+}
+
+ul>li>a:hover:after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    right: 1px;
+    top: 9px;
+    border-left-color: wh;
+}
