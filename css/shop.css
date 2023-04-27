@@ -1,0 +1,125 @@
+.top{
+    /* background: red; */
+    /* color: white !important; */
+    text-align: center;
+    text-indent: -9999px;
+    /* font-style: italic; */
+    font-size: 1.25em;
+    margin: auto;
+    /* padding: 3px; */
+    height: 63px;
+    /* height: 100%; */
+    /* line-height: 90px; */
+    display: block;
+    background-image: url('../imgs/gamewoori.jpg') ;
+    /* background-repeat: no-repeat; */
+    background-size: auto 63px;
+    cursor: pointer;
+    
+}
+.logo{
+
+}
+
+.xi-bars{
+    color: crimson;
+    cursor: pointer;
+}
+
+form>img{
+    height: 25px;
+    cursor: pointer;
+    /* width: 15%; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* 양쪽 정렬 */
+    align-items: center;
+    /* 세로중앙정령 */
+    padding: 10px;
+    /* border-bottom: 1px solid gray; */
+}
+
+.nav h1{
+    font-size: 1.5em;
+    margin-left: 30px;
+}
+
+.nav i{
+    font-size: 1.5em;
+}
+
+h1, h2{
+    /* text-align: center; */
+}
+
+.bottom{
+    /* border-bottom: 1px solid lightgray; */
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;  
+    font-size: 2.7vw;
+    padding:5px
+}
+
+.bottom i{
+    font-size: 1.5em;
+}
+
+div>span{
+    margin:5px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+div>span:hover{
+    font-weight: 900;
+}
+
+form>img{
+    height: 25px;
+    /* width: 15%; */
+}
+
+/* div>span:hover .bottom2{
+    border: 1px solid black;
+} */
+
+div>section{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100px;
+    padding: 10px;
+    cursor: pointer;
+
+    /* width: 720px; */
+}
+
+.machinetext{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center; 
+    height: 20px;
+    padding: 10px;
+    font-size: 2.5vw;
+}
+
+div>section>img:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 50%;
+    flex-grow: 0.05; 
+}
+
+.starwars2{
+    width: 100%;
+    height: auto;
+    /* min-width: 540px; */
+}
+
+
