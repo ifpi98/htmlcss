@@ -1,0 +1,102 @@
+/* 모바일 적용 */
+@media screen and (max-width:767px){
+    .box{
+        border: 1px solid;
+        height: 80px;
+        margin: 5px;
+    }   
+}
+
+/* 태블릿에 적용 */
+@media screen and (min-width:768px) and (max-width:1279px){
+
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    margin: 0.1%;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+}
+
+[class*=box]{
+    border: 1px solid;
+    height: 80px;
+    /* float: left; */
+    margin: 0.1%;
+    background-color: lightgray;
+    /* flex:1; */
+}
+
+.g12{    grid-template-columns: repeat(1, 1fr)}
+.g6{    grid-template-columns: repeat(2, 1fr)}
+.g4{    grid-template-columns: repeat(3, 1fr)}
+.g3{    grid-template-columns: repeat(4, 1fr)}
+.g2{    grid-template-columns: repeat(6, 1fr)}
+
+
+/* 
+.grid12{    width:calc(100% - 0.5%);}
+.grid6{    width:calc(100%/2 - 0.5%);}
+.grid4{    width:calc(100%/3 - 0.5%);}
+.grid3{    width:calc(100%/4 - 0.5%);}
+.grid2{    width:calc(100%/6 - 0.5%);} */
+
+}
+
+/* pc버전 */
+@media screen and (min-width:1280px){
+/* 동적 그리드 - 태블릿, 모바일 */
+/* 정적 그리드 - pc버전 */
+
+.wrap{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.row{
+    margin: 2px;
+    overflow: hidden;
+    background-color: lightgray;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+
+
+}
+
+[class*=box]{
+    border: 1px solid;
+    height: 80px;
+    /* float: left; */
+    margin:2px;
+    /* flex:1; */
+}
+
+.g12{    grid-template-columns: repeat(1, 1fr)}
+.g6{    grid-template-columns: repeat(2, 1fr)}
+.g4{    grid-template-columns: repeat(3, 1fr)}
+.g3{    grid-template-columns: repeat(4, 1fr)}
+.g2{    grid-template-columns: repeat(6, 1fr)}
+
+
+
+/* .grid12{    width:calc(1280px - 12px);}
+.grid6{    width:calc(1280px/2 - 9px);}
+.grid4{    width:calc(1280px/3 - 8px);}
+.grid3{    width:calc(1280px/4 - 7.5px);}
+.grid2{    width:calc(1280px/6 - 7px);} */
+
+/* .grid12{    width:calc(1280px - 12px);}
+.grid6{    width:calc(1280px/2 - 9px);}
+.grid4{    width:calc(1280px/3 - 8px);}
+.grid3{    width:calc(1280px/4 - 7.5px);}
+.grid2{    width:calc(1280px/6 - 7px);} */
+
+}
