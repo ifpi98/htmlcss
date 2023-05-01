@@ -1,0 +1,88 @@
+/* 데스크탑 버전 */
+    h1{
+        width: 1080px;
+        margin: 20px auto;
+        /* background: red; */
+        /* color: white; */
+        letter-spacing: 1px;
+        padding: 10px;
+        text-align: center;
+        /* text-transform: capitalize; */
+        /* border: 5px solid gray; */
+        /* border-radius: 5px; */
+        font-family: serif;
+        text-shadow: 1px 1px black;
+    }
+    
+    section{width: 1080px; margin:auto;}
+    
+    [class=box]{
+        float:left;
+        /* border: 3px solid black; */
+        width: 150px;
+        margin:10px;
+        padding:10px;
+        line-height: 1.5;
+        height:230px;
+        box-sizing: border-box;
+        /* box-shadow: 3px 4px gray; */
+    }
+    
+    [class=row]{
+        overflow:hidden;
+        margin:10px 10px;
+        padding-left: 50px;
+    }
+   
+    h2{
+        text-align: center;
+        /* border-bottom: 3px solid red; */
+        background-color: gray;
+        color: white;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;;
+    }
+    
+    ul>li{
+        /* text-indent: 35px; */
+        position:relative;
+        border: 1px solid black;
+        /* align-items: center; */
+        text-align: center;
+        background: lightyellow;
+    }
+    
+    ul>li::before{
+        /* content: '\1f644'; */
+        position:absolute;
+        left: -25px;
+        top:0;
+    }
+    
+    
+    ul>li:hover{
+        cursor: pointer;
+        /* text-indent: 40px; */
+        transition: 1s;
+        background: pink;
+    }
+    
+    .box:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    
+    ul>li:hover:before{
+        /* content: '\1F60A'; */
+    }
+    
+    .row {
+        /* overflow: visible !important; */
+    }
+
+    .row:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
