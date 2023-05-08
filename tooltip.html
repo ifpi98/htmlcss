@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/reset.css">
+ <title>풍선도움말</title>
+
+</head>
+
+<body>
+ <h1> 풍선도움말(설명툴팁) </h1>
+ <div class="tooltip_wrap">
+  <a href="#" class="tooltip">
+   HTML이란?
+   <span>
+    <b> CSS 실전예제 Tooltip</b>
+    <i> CSS만으로 툴팁구현하는 세계</i>
+   </span>
+  </a>
+ </div>
+ <style>
+  .tooltip {   position: relative;  }
+  .tooltip span {  /* display: none;   */
+   visibility: hidden; opacity:0; transition: 1s;
+   background-color: yellow;
+   border: 0px solid gray;   width:220px;
+   padding:10px;   border-radius: 10px;
+   box-shadow: 3px 3px gray;
+   position: absolute; left:100px; top:0;  }
+  .tooltip span b{ display: block; padding: 0px; margin: 5px;}
+  .tooltip:hover span{ /* display: block;  */
+    visibility: visible; opacity: 1;
+   }
+  .tooltip{  display: block;    margin:20px; width:100px;   }
+  .tooltip span::before{
+   content:''; display: block; width:0; height:0;
+   border:10px solid transparent; 
+   border-left:10px solid yellow;
+   position: absolute; left:-20px; 
+   transform: rotate(180deg);
+  }
+  .tooltip:hover{ font-weight: bold;}
+ </style>
+</body>
+
+</html>

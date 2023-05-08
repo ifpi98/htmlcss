@@ -2,13 +2,12 @@
 *{
     margin:0; 
     padding:0;
+    -webkit-text-size-adjust:none;
 }
 
 a{
     text-decoration: none;
-    /* 밑줄제거 */
-    color: black;
-    
+    color: black;   
 }
 
 li{
@@ -16,8 +15,9 @@ li{
 }
 
 table{
-    border-collapse: collapse;
     /* 표테두리 단일실선 */
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 a:link{
@@ -32,6 +32,20 @@ a:active{
     color:gray;
 }
 
-a:visited{
+/* a:visited{
     color:green;
+} */
+
+input, img{
+    vertical-align: baseline;
 }
+
+img, fieldset{ border:0;}
+
+em, i, address{
+  font-style:normal;
+}
+
+textarea{ resize:none;}
+
+label{ cursor:pointer ;}
