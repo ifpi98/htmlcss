@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    box-shadow: 0 0 20px #e5e5e5;
+    padding: 0 40px;
+}
+
+input[id*="answer"] {
+    display: none;
+}
+
+input[id*="answer"]+label {
+    font-size: 1.5em;
+    display: flex;
+    line-height: 4em;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #d5d5d5;
+    cursor: pointer;
+    /* color:violet; */
+}
+
+input[id*="answer"]+label i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: all .3s;
+}
+
+input[id*="answer"]+label+div {
+    overflow: hidden;
+    height: 0;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+}
+
+input[id*="answer"]+label+div p {
+    display: inline-block;
+    padding: 20px 0;
+}
+
+input[id*="answer"]:checked+label+div {
+    background-color: rgba(211, 211, 211, 0.2);
+    height: 150px;
+    border-bottom: 1px solid #d5d5d5;
+    /* color: #d5d5d5; */
+}
+
+input[id*="answer"]:checked+label {
+    background-color: rgba(211, 211, 211, 0.2);
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+input[id*="answer"]:checked+label i {
+    transform: rotate(180deg);
+    /* transition: 1s; */
+}
