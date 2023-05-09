@@ -1,0 +1,124 @@
+body{
+    /* background: lightgray; */
+}
+
+header{
+    height: 120px;
+    /* line-height: 100px; */
+    padding-left: 10px;
+    /* border-bottom: 1px solid black; */
+    /* color: white; */
+    position: relative;
+}
+
+.logo{
+    float:left;
+    /* position: absolute; */
+    left:10px;
+    top:10px;
+    
+}
+
+.logo>img{
+    width: 200px;
+}
+
+.UList{
+    /* padding: 100px; */
+}
+
+.nav>li{
+    float:left;
+    width: 100px;
+    margin-top: 30px;
+    margin-right: 10px;
+    text-align: center;
+    /* padding:0px; */
+    /* display: block; */
+}
+
+.nav>li>a{
+    display: block;
+    padding: 5px 10px;
+}
+
+.nav>li:hover>a{
+    background: blue;
+    transition: 0.5s;
+}
+
+.nav>li:hover>a{
+    color: white
+}
+
+.nav>li:hover>ul{
+    /* display: block; */
+    /* background: white; */
+    height:100px;
+    visibility: visible;
+    transition: .5s;
+}
+
+.nav>li:hover>ul>li{
+    background: white;
+}
+
+.nav>li:hover>ul>li>a{
+    color:black;
+}
+
+.submenu{
+    /* display: none; */
+    /* display: block; */
+    height:0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 9999;
+    width: 100px;
+    
+}
+
+.submenu>li{
+    /* display: block; */
+    /* position: absolute; */
+    
+}
+
+.submenu>li>a{
+    display: block;
+    padding: 5px 10px;
+    /* z-index: 9999; */
+}
+
+.submenu>li>a:hover{
+    background: gray;
+    color:white !important;
+    transition: 0.5s;
+    /* display: block; */
+}
+
+/* .submenu>li>a:hover{
+    background: gray;
+    
+} */
+
+header>nav{
+    /* border-bottom: 1px solid black; */
+    /* background: darkblue; */
+    float:right;
+    overflow: hidden;
+}
+
+.slidetitle>h2{
+    display: block;
+    
+}
+
+.slidetitle>h2>span{
+    background: rgba(0, 255, 255,0.5);
+    padding:20px;
+}
+
+.slidetitle{
+    
+}
