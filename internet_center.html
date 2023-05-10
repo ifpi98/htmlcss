@@ -36,7 +36,7 @@
                         <li><a href="#">Sub Menu1</a></li>
                     </ol>
                 </li>
-                <li><a href="#">Contact</a>
+                <li><a href="#" id="contact">Contact</a>
                     <ol>
                         <li><a href="#">Sub Menu1</a></li>
                         <li><a href="#">Sub Menu1</a></li>
@@ -46,6 +46,17 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        var contact=document.getElementById('contact');
+        contact.onclick=function(){
+            // alert("경고창입니다");
+            // console.log("Welcome to my world !!!");
+            // console.dir("안녕하세요!");
+            window.open("contact.html",'창이름',"width=500,height=500,left=300,top=300,toolbar=no,location=no, status=no, menubar=no, resizable=no");
+
+        }
+    </script>
 
     <div class="img_slide">
         <!-- Slider main container -->
@@ -115,7 +126,7 @@
         <div class="modal_inner">
             <img src="./imgs/otherimage17.jpg">
             <hr>
-            <button id="close">닫기</button>
+            <button id="close" onclick="window.close()">닫기</button>
         </div>
     </div>
 

@@ -123,3 +123,40 @@ ul>li:hover ol{
     display: block;
     margin:auto;
 }
+
+/* 푸터레이아웃 */
+footer{
+    background-color: steelblue;
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+}
+
+.notice_go ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+footer>div{
+    flex:1;
+}
+
+.notice_go ul li a{
+    color: inherit;
+}
+
+/* 헤더를 고정바로 구현하기 */
+header{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    z-index: 1000;
+}
+
+.img_slide{
+    padding-top: 150px;
+}
