@@ -1,0 +1,125 @@
+/* 인터넷 카페 레이아웃 */
+
+/* 헤더 레이아웃 */
+header{
+    position: relative;
+    height: 150px;
+    width: 1000px;
+    margin: auto;
+}
+
+header h1{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+header nav{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+
+/* 네비게이션메뉴 레이아웃 */
+
+header nav{
+    width: 450px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul>li{
+    flex:1;
+}
+
+/* 서브 메뉴 숨기기 */
+ul ol {
+    background: lightgray;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+ul>li{
+    position: relative;
+}
+
+ul>li:hover ol{
+    display: block;
+    width: 100%;
+}
+
+/* 이미지 슬라이드 레이아웃 */
+.img_slide{
+    height: 350px;
+    width: 1000px;
+    margin: auto;
+}
+
+.img_slide img{
+    height: 350px;
+    width: 1000px;
+}
+
+/* 컨텐츠 레이아웃 */
+
+.contents{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contents>div{
+    flex:1;
+    margin:20px;
+}
+
+/* 모달창 구현하기 */
+
+#modal {
+    display: none;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 100;
+}
+
+/* #modal:target{    display:block; } */
+
+/* 모달 창 가운데 정렬 */
+.modal_inner{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    z-index: 100;
+    width: 500px;
+    height: 400px;
+}
+
+.modal_inner img{
+    width: 500px;
+}
+
+/* 서비스 레이아웃 */
+
+.service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    margin: auto;
+}
+
+.service .icons img{
+    width: 90%;
+    display: block;
+    margin:auto;
+}

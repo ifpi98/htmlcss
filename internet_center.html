@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인터넷 센터</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/internet_center.css">
+    <link rel="stylesheet" href="css/internet_center_layout.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1><img src="./imgs/otherimage12.jpg"></h1>
+        <nav>
+            <ul>
+                <li><a href="#">센터소개</a>
+                    <ol>
+                        <li><a href="#">Sub Menu1</a></li>
+                        <li><a href="#">Sub Menu1</a></li>
+                        <li><a href="#">Sub Menu1</a></li>
+                    </ol>
+                </li>
+                <li><a href="#">센터업무</a>
+                    <ol>
+                        <li><a href="#">Sub Menu1</a></li>
+                        <li><a href="#">Sub Menu1</a></li>
+                        <li><a href="#">Sub Menu1</a></li>
+                    </ol>
+                </li>
+                <li><a href="#">Contact</a>
+                    <ol>
+                        <li><a href="#">Sub Menu1</a></li>
+                        <li><a href="#">Sub Menu1</a></li>
+                        <li><a href="#">Sub Menu1</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="img_slide">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./imgs/slide/images(1).jpg"></div>
+                <div class="swiper-slide"><img src="./imgs/slide/images(2).jpg"></div>
+                <div class="swiper-slide"><img src="./imgs/slide/images(3).jpg"></div>
+                <div class="swiper-slide"><img src="./imgs/slide/images(4).jpg"></div>
+                <div class="swiper-slide"><img src="./imgs/slide/images(5).jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <!-- 이미지 슬라이드의 끝 부분 -->
+
+    <div class="contents">
+        <div class="notice">
+            <h2> 공지사항</h2>
+            <table class="table">
+                <tr>
+                    <td><a href="#">인터넷센터에서 12회 심포지움을 개최합니다.</a></td>
+                    <td>2018-04-10</td>
+                </tr>
+                <tr>
+                    <td><a href="#">인터넷센터에서 13회 심포지움을 개최합니다.</a></td>
+                    <td>2018-04-11</td>
+                </tr>
+                <tr>
+                    <td><a href="#">인터넷센터에서 14회 심포지움을 개최합니다.</a></td>
+                    <td>2018-04-12</td>
+                </tr>
+                <tr>
+                    <td><a href="#">인터넷센터에서 15회 심포지움을 개최합니다.</a></td>
+                    <td>2018-04-13</td>
+                </tr>
+                <tr>
+                    <td><a href="#">인터넷센터에서 16회 심포지움을 개최합니다.</a></td>
+                    <td>2018-04-14</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="partner">
+            <h2>Web Partner Site</h2>
+            <div class="partner_info">
+                <!-- <a href="#modal"><img src="./imgs/partner/PARTNER.png" id="imgModal"></a> -->
+                <img src="./imgs/partner/PARTNER.png" id="imgModal">
+            </div>
+        </div>
+
+    </div>
+    <!-- 컨텐츠의 끝 부분 -->
+
+    <!-- 모달 팝업창 -->
+    <div id="modal">
+        <div class="modal_inner">
+            <img src="./imgs/otherimage17.jpg">
+            <hr>
+            <button id="close">닫기</button>
+        </div>
+    </div>
+
+    <!-- 모달 스크립트 -->
+    <script>
+        var btn = document.getElementById('close');
+        var modal = document.getElementById('modal');
+        var imgModal = document.getElementById('imgModal');
+
+        imgModal.onclick=function(){
+            modal.style.display="block";
+        }
+      
+
+        // 닫기 버튼을 클릭하면 modal창이 닫혀라
+        btn.onclick=function(){
+            modal.style.display="none";
+            // modal에 css의 display으로 none으로 지정하라.
+        }
+
+    </script>
+
+    <div class="service">
+        <div class="icons">
+            <img src="./imgs/beverage1.jpg" alt="">
+            <p class="info"> 인터넷 정보수집발굴</p>
+            <p class="text"> 인터넷 사례조사</p>
+        </div>
+        <div class="icons">
+            <img src="./imgs/beverage2.jpg">
+            <p class="info"> 교육 프로그램 개발</p>
+            <p class="text"> 인터넷 사례조사</p>
+        </div>
+        <div class="icons">
+            <img src="./imgs/beverage3.jpg">
+            <p class="info"> 역기능 예방 및 대응</p>
+            <p class="text"> 인터넷 사례조사</p>
+        </div>
+    </div>
+    <!-- 서비스의 끝 부분 -->
+
+    <footer>
+        <div class="notice_go">
+            <ul>
+                <li><a href="#"> 법적고지</a></li>
+                <li><a href="#"> 개인정보취급방침</a></li>
+                <li><a href="#"> 개인정보처리방침</a></li>
+            </ul>
+        </div>
+        <div class="address">
+            <p> 인터넷 센터</p>
+            <p> 대표자: 윤선미</p>
+            <p> 개인정보관리책임자: 장동건</p>
+            <p> 사업장주소: 서울시 여의도 청화대학교</p>
+        </div>
+
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            autoplay: {
+                delay: 2000,
+                // waitForTransition:true,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                //   type: 'bullets',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
