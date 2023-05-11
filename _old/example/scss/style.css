@@ -20,4 +20,223 @@ nav ul li {
   background-image: url("../../../imgs/back1.png");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transition: 1s;
+}
+.box:hover {
+  background-color: blue;
+}
+
+.one {
+  color: lime;
+}
+.one .two {
+  color: blue;
+}
+.one .two .three {
+  color: pink;
+}
+p {
+  color: red;
+}
+
+h1 {
+  color: red;
+  font-size: 32px;
+}
+h1 span {
+  color: blue;
+}
+
+p {
+  text-align: left;
+}
+
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.two li {
+  margin-right: 20px;
+}
+
+.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
+  background-color: red;
+}
+.three li {
+  margin-right: 30px;
+}
+
+.profile-user, .comment-user {
+  background-image: url("../../../imgs/back2.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.message-button, .follow-button {
+  width: 133px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.follow-button {
+  color: red;
+  border: 3px solid blue;
+}
+
+.square-av {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.circle-av {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.banner {
+  background-color: #f2ece4;
+  color: #036;
+}
+body.dark .banner {
+  background-color: #6b717f;
+  color: #d2e1dd;
+}
+
+.one {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.two {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.three {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 2px;
+}
+
+.four {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 2px;
+}
+
+.five {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 2px;
+}
+
+.six {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 2px;
+}
+
+.next {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2.5px;
+  border-left-color: black;
+}
+
+.photo-box:nth-child(1) {
+  background-image: url("abc1.png");
+}
+
+.photo-box:nth-child(2) {
+  background-image: url("abc2.png");
+}
+
+.photo-box:nth-child(3) {
+  background-image: url("abc3.png");
+}
+
+.photo-box:nth-child(4) {
+  background-image: url("abc4.png");
+}
+
+.photo-box:nth-child(5) {
+  background-image: url("abc5.png");
+}
+
+.color-circle:nth-child(1) {
+  background: #dad5d2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(2) {
+  background: #3a3532;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(3) {
+  background: #375945;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(4) {
+  background: #5b8767;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(5) {
+  background: #a6c198;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(6) {
+  background: #dbdfc8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
