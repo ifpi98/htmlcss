@@ -310,3 +310,47 @@ $color-palette: #dad5d2 #3a3532 #375945 #5b8767 #a6c198 #dbdfc8;
     border-radius: 50%;
   }
 }
+
+// while
+
+$money : 10;
+
+@while $money > 1{
+    $money : $money - 2;
+
+    .content-#{$money}{
+        width: 100px;
+        height: 100px;
+        background: gold;
+    }
+}
+
+//function
+@function scale-below($value, $base, $ratio:1.6){
+    @while $value>$base{
+        $value : ($value/$ratio);
+    }
+    @return $value;
+}
+
+.sub{
+    font-size: scale-below(20px, 20px , );
+}
+
+.sub1{
+    font-size: scale-below(20px, 10px , );
+}
+
+//거듭제곱을 구하는 함수
+@function pow($base, $expo){
+    $result:1;
+    @for $i from 1 through $expo{
+        $result : $result * $base;
+    }
+    @return $result
+}
+ 
+.side-bar{
+    margin-left: pow(4,3) * 1px;
+    font-size: max(10,20,30) * 1px;
+}

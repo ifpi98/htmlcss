@@ -239,4 +239,47 @@ body.dark .banner {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.content-8 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-6 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-4 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-2 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-0 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.sub {
+  font-size: 20px;
+}
+
+.sub1 {
+  font-size: 7.8125px;
+}
+
+.side-bar {
+  margin-left: 64px;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
