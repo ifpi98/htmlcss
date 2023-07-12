@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .skewy:hover {
+            transform: skewy(15deg);
+        }
+        .skewxy:hover {
+            transform: skew(30deg, 15deg);
+        }
+
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+            transition-property: width, height;
+            transition-duration: 2s, 1s;
+        }
+
+        .tr1:hover {
+            width:300px;
+            height:200px;
+        }
+
+        #box1 {
+            background-color: #4cff00;
+            border: 1px solid black;
+            animation-name: shape;
+            animation-duration: 3s;
+        }
+
+        #box2 {
+            background-color: #8f06b0;
+            border: 1px solid black;
+            animation-name: rotate;
+            animation-duration: 3s;
+        }
+
+        @keyframes shape {
+            from {
+                border: 1px solid black;
+            }
+            to {
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(45deg);
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="origin">
+        <div class="skewx tr1"><img src="./imgs/milk1.jpg"></div>
+    </div>
+    <!-- <div class="origin">
+        <div class="skewy"><img src="./imgs/milk1.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="skewxy"><img src="./imgs/milk1.jpg"></div>
+    </div> -->
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {
+            width: 500px;
+            padding: 15px;
+            border: 5px solid gray;
+        }
+
+        body {
+            color: blue;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-family: "Arial Rounded MT";
+        }
+
+        .shadow1{
+            color:orange;
+            text-shadow: 1px 1px;
+        }
+
+        .shadow2{
+            text-shadow: 5px 5px 3px #f00;
+        }
+
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        
+        .ng-font{
+            font-family: 'Nanum Gothic', 돋움;
+        }
+
+        p {
+            /* font-size: 30px; */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .align-left {text-align: left;}
+        .align-right {text-align: right;}
+        .align-center {text-align: center;}
+        .align-justify {text-align: justify;}
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id>
+        <section>
+            <h2> Who am I?</h2>
+            <p> 프론트엔드 웹 기술(Front-end Web Tech)에 관심이 많습니다. <br> 현재 제주의 한 시골 마을에서 코딩 중입니다.</p>
+        </section>
+    </div>
+
+    <div id="container">
+        <h2 style="color:green;">이지스퍼블리싱의 미션</h2>
+        <p> 프론트엔드 웹 기술(Front-end Web Tech)에 관심이 많습니다. <br> 현재 제주의 한 시골 마을에서 코딩 중입니다.</p>
+        <p> 프론트엔드 웹 기술(Front-end Web Tech)에 관심이 많습니다. </p>
+        <p style = "color:red; font-style:italic;"> "이 책이 사람들에게 도움이 됩니까?"</p>
+    </div>
+
+    <p> 브라우저 기본 글꼴 사용</p>
+    <p class="ng-font">나눔고딕 웹 폰트 사용</p>
+
+    <p class="align-left"> Integer elementum...... </p>
+    <p class="align-right"> Integer elementum...... </p>
+    <p class="align-center"> Integer elementum...... </p>
+    <p class="align-justify"> Integer elementum...... </p>
+
+</body>
+</html>
